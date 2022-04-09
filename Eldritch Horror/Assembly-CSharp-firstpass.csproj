@@ -86,7 +86,6 @@
     <Compile Include="Assets\Plugins\EasyUnity\Console\NoxConsoleReflection.cs" />
     <Compile Include="Assets\Plugins\EasyUnity\Core\EasyPool.cs" />
     <Compile Include="Assets\Plugins\EasyUnity\Core\Log.cs" />
-    <Compile Include="Assets\Plugins\EasyUnity\Animation\SpriteSheetInfo.cs" />
     <Compile Include="Assets\Plugins\EasyUnity\Extras\PlayAudioOnTrigger.cs" />
     <Compile Include="Assets\Plugins\EasyUnity\Core\UnityEditorExtensions.cs" />
     <Compile Include="Assets\Plugins\EasyUnity\Audio\EasyFauxVO.cs" />
