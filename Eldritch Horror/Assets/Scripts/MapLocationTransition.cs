@@ -41,12 +41,6 @@ public class MapLocationTransition : MonoBehaviour
     {
         lr.endColor = lr.startColor = transitionColors[(int)_transitionType];
     }
-    private void OnDrawGizmosSelected()
-    {
-        if (lr && lr.positionCount > 1)
-            for (int i = 1; i < lr.positionCount; i++)
-            Gizmos.DrawLine(lr.GetPosition(i - 1), lr.GetPosition(i));
-    }
 }
 
 public enum MapTransitionType

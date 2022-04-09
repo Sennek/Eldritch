@@ -57,5 +57,14 @@ public class MapLocation : MonoBehaviour
                 location._linkedLocations.Add(this);
         }
     }
+    private void OnDrawGizmosSelected()
+    {
+        foreach (var transition in _transitions)
+        {
+            if (transition.lr && transition.lr.positionCount > 1)
+                for (int i = 1; i < transition.lr.positionCount; i++)
+                    Gizmos.DrawLine(transition.lr.GetPosition(i - 1), transition.lr.GetPosition(i));
+        }
+    }
     #endregion
 }
