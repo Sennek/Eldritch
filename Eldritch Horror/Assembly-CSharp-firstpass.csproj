@@ -1,7 +1,7 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <PropertyGroup>
-    <LangVersion>latest</LangVersion>
+    <LangVersion>9.0</LangVersion>
   </PropertyGroup>
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
@@ -53,54 +53,57 @@
     <UnityVersion>2021.2.10f1</UnityVersion>
   </PropertyGroup>
   <ItemGroup>
-    <Compile Include="Assets\Plugins\EasyUnity\Extras\IPathfindable2D.cs" />
-    <Compile Include="Assets\Plugins\EasyUnity\Audio\EasyCharacterVOInfo.cs" />
-    <Compile Include="Assets\Plugins\EasyUnity\Core\UnityEngineExtensions.cs" />
+    <Analyzer Include="C:\Program Files (x86)\Microsoft Visual Studio Tools for Unity\16.0\Analyzers\Microsoft.Unity.Analyzers.dll" />
+  </ItemGroup>
+  <ItemGroup>
     <Compile Include="Assets\Plugins\EasyUnity\Serializables\SerializableDictionary.cs" />
-    <Compile Include="Assets\Plugins\EasyUnity\Extras\PathFinder2D.cs" />
-    <Compile Include="Assets\Plugins\EasyUnity\Extras\RomanNumber.cs" />
-    <Compile Include="Assets\Plugins\EasyUnity\Audio\EasyAudioMix.cs" />
-    <Compile Include="Assets\Plugins\EasyUnity\Audio\EasyMixedAudioClip.cs" />
-    <Compile Include="Assets\Plugins\EasyUnity\Core\SingletonSO.cs" />
-    <Compile Include="Assets\Plugins\EasyUnity\Core\EasySingleton.cs" />
-    <Compile Include="Assets\Plugins\EasyUnity\Core\EasyCoroutine.cs" />
-    <Compile Include="Assets\Plugins\EasyUnity\Core\EasyPoolGeneric.cs" />
-    <Compile Include="Assets\Plugins\EasyUnity\Extras\UnityEventRelay.cs" />
-    <Compile Include="Assets\Plugins\EasyUnity\Odin\SerializedSingletonSO.cs" />
-    <Compile Include="Assets\Plugins\EasyUnity\Core\SingletonMB.cs" />
-    <Compile Include="Assets\Plugins\EasyUnity\Extras\FPSCounter.cs" />
-    <Compile Include="Assets\Plugins\EasyUnity\Extras\Wind.cs" />
-    <Compile Include="Assets\Plugins\EasyUnity\Odin\SerializedSingletonMB.cs" />
-    <Compile Include="Assets\Plugins\EasyUnity\AnimatedTMP.cs" />
-    <Compile Include="Assets\Plugins\EasyUnity\Extras\DontDestroyOnLoad.cs" />
-    <Compile Include="Assets\Plugins\EasyUnity\Loading\EasyGameSave.cs" />
-    <Compile Include="Assets\Plugins\EasyUnity\Extras\PhysicsCollisionMatrix.cs" />
-    <Compile Include="Assets\Plugins\EasyUnity\Loading\EasyGameLoader.cs" />
-    <Compile Include="Assets\Plugins\EasyUnity\Core\TextMeshProExtensions.cs" />
-    <Compile Include="Assets\Plugins\EasyUnity\Extras\FollowObject.cs" />
-    <Compile Include="Assets\Plugins\EasyUnity\Extras\CustomEventRelay.cs" />
-    <Compile Include="Assets\Plugins\EasyUnity\Core\EasyAuxiliar.cs" />
-    <Compile Include="Assets\Plugins\EasyUnity\Extras\EasyScreenshotTaker.cs" />
-    <Compile Include="Assets\Plugins\EasyUnity\Console\NoxConsole.cs" />
-    <Compile Include="Assets\Plugins\EasyUnity\Extras\SetParameterOnEvent.cs" />
-    <Compile Include="Assets\Plugins\EasyUnity\Console\NoxConsoleReflection.cs" />
-    <Compile Include="Assets\Plugins\EasyUnity\Core\EasyPool.cs" />
-    <Compile Include="Assets\Plugins\EasyUnity\Core\Log.cs" />
-    <Compile Include="Assets\Plugins\EasyUnity\Extras\PlayAudioOnTrigger.cs" />
-    <Compile Include="Assets\Plugins\EasyUnity\Core\UnityEditorExtensions.cs" />
-    <Compile Include="Assets\Plugins\EasyUnity\Audio\EasyFauxVO.cs" />
-    <Compile Include="Assets\Plugins\EasyUnity\Serializables\SerializableHashSet.cs" />
-    <Compile Include="Assets\Plugins\EasyUnity\Core\Ranges.cs" />
-    <Compile Include="Assets\Plugins\EasyUnity\Serializables\SerializableList.cs" />
-    <Compile Include="Assets\Plugins\EasyUnity\Core\AbsoluteDirection.cs" />
-    <Compile Include="Assets\Plugins\LeanTween\Framework\LeanTest.cs" />
-    <Compile Include="Assets\Plugins\LeanTween\Framework\LeanSmooth.cs" />
-    <Compile Include="Assets\Plugins\LeanTween\Framework\LeanAudio.cs" />
-    <Compile Include="Assets\Plugins\LeanTween\Framework\LTDescrOptional.cs" />
     <Compile Include="Assets\Plugins\LeanTween\Framework\LeanTween.cs" />
     <Compile Include="Assets\Plugins\LeanTween\Framework\LTDescr.cs" />
-    <Compile Include="Assets\Plugins\LeanTween\Framework\LTSeq.cs" />
+    <Compile Include="Assets\Plugins\EasyUnity\Audio\EasyCharacterVOInfo.cs" />
+    <Compile Include="Assets\Plugins\EasyUnity\Core\EasyCoroutine.cs" />
     <Compile Include="Assets\Plugins\LeanTween\Framework\LeanTweenExt.cs" />
+    <Compile Include="Assets\Plugins\EasyUnity\Loading\EasyGameSave.cs" />
+    <Compile Include="Assets\Plugins\LeanTween\Framework\LTSeq.cs" />
+    <Compile Include="Assets\Plugins\EasyUnity\Extras\CustomEventRelay.cs" />
+    <Compile Include="Assets\Plugins\EasyUnity\Audio\EasyMixedAudioClip.cs" />
+    <Compile Include="Assets\Plugins\EasyUnity\Core\Ranges.cs" />
+    <Compile Include="Assets\Plugins\EasyUnity\Extras\PlayAudioOnTrigger.cs" />
+    <Compile Include="Assets\Plugins\EasyUnity\Extras\FollowObject.cs" />
+    <Compile Include="Assets\Plugins\EasyUnity\Extras\PathFinder2D.cs" />
+    <Compile Include="Assets\Plugins\EasyUnity\AnimatedTMP.cs" />
+    <Compile Include="Assets\Plugins\EasyUnity\Extras\SetParameterOnEvent.cs" />
+    <Compile Include="Assets\Plugins\EasyUnity\Audio\EasyFauxVO.cs" />
+    <Compile Include="Assets\Plugins\EasyUnity\Serializables\SerializableList.cs" />
+    <Compile Include="Assets\Plugins\EasyUnity\Extras\IPathfindable2D.cs" />
+    <Compile Include="Assets\Plugins\EasyUnity\Console\NoxConsoleReflection.cs" />
+    <Compile Include="Assets\Plugins\LeanTween\Framework\LTDescrOptional.cs" />
+    <Compile Include="Assets\Plugins\EasyUnity\Odin\SerializedSingletonSO.cs" />
+    <Compile Include="Assets\Plugins\EasyUnity\Core\UnityEditorExtensions.cs" />
+    <Compile Include="Assets\Plugins\EasyUnity\Core\AbsoluteDirection.cs" />
+    <Compile Include="Assets\Plugins\EasyUnity\Core\EasyPoolGeneric.cs" />
+    <Compile Include="Assets\Plugins\EasyUnity\Core\EasyAuxiliar.cs" />
+    <Compile Include="Assets\Plugins\EasyUnity\Serializables\SerializableHashSet.cs" />
+    <Compile Include="Assets\Plugins\EasyUnity\Core\SingletonMB.cs" />
+    <Compile Include="Assets\Plugins\EasyUnity\Core\TextMeshProExtensions.cs" />
+    <Compile Include="Assets\Plugins\LeanTween\Framework\LeanAudio.cs" />
+    <Compile Include="Assets\Plugins\EasyUnity\Core\Log.cs" />
+    <Compile Include="Assets\Plugins\EasyUnity\Console\NoxConsole.cs" />
+    <Compile Include="Assets\Plugins\EasyUnity\Extras\UnityEventRelay.cs" />
+    <Compile Include="Assets\Plugins\EasyUnity\Extras\PhysicsCollisionMatrix.cs" />
+    <Compile Include="Assets\Plugins\EasyUnity\Core\UnityEngineExtensions.cs" />
+    <Compile Include="Assets\Plugins\LeanTween\Framework\LeanSmooth.cs" />
+    <Compile Include="Assets\Plugins\EasyUnity\Audio\EasyAudioMix.cs" />
+    <Compile Include="Assets\Plugins\EasyUnity\Extras\FPSCounter.cs" />
+    <Compile Include="Assets\Plugins\EasyUnity\Core\SingletonSO.cs" />
+    <Compile Include="Assets\Plugins\EasyUnity\Extras\DontDestroyOnLoad.cs" />
+    <Compile Include="Assets\Plugins\EasyUnity\Core\EasyPool.cs" />
+    <Compile Include="Assets\Plugins\LeanTween\Framework\LeanTest.cs" />
+    <Compile Include="Assets\Plugins\EasyUnity\Extras\RomanNumber.cs" />
+    <Compile Include="Assets\Plugins\EasyUnity\Loading\EasyGameLoader.cs" />
+    <Compile Include="Assets\Plugins\EasyUnity\Extras\EasyScreenshotTaker.cs" />
+    <Compile Include="Assets\Plugins\EasyUnity\Odin\SerializedSingletonMB.cs" />
+    <Compile Include="Assets\Plugins\EasyUnity\Core\EasySingleton.cs" />
+    <Compile Include="Assets\Plugins\EasyUnity\Extras\Wind.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Assets\Plugins\LeanTween\ReadMe.txt" />
@@ -379,50 +382,29 @@
     <Reference Include="UnityEditor.UnityConnectModule">
       <HintPath>C:\Program Files\Unity\Hub\Editor\2021.2.10f1\Editor\Data\Managed\UnityEngine\UnityEditor.UnityConnectModule.dll</HintPath>
     </Reference>
-    <Reference Include="Unity.Burst.Unsafe">
-      <HintPath>Library\PackageCache\com.unity.burst@1.6.4\Unity.Burst.Unsafe.dll</HintPath>
-    </Reference>
-    <Reference Include="Unity.Burst.Cecil.Mdb">
-      <HintPath>Library\PackageCache\com.unity.burst@1.6.4\Unity.Burst.CodeGen\Unity.Burst.Cecil.Mdb.dll</HintPath>
-    </Reference>
-    <Reference Include="Unity.Burst.Cecil.Pdb">
-      <HintPath>Library\PackageCache\com.unity.burst@1.6.4\Unity.Burst.CodeGen\Unity.Burst.Cecil.Pdb.dll</HintPath>
-    </Reference>
-    <Reference Include="Unity.Burst.Cecil">
-      <HintPath>Library\PackageCache\com.unity.burst@1.6.4\Unity.Burst.CodeGen\Unity.Burst.Cecil.dll</HintPath>
-    </Reference>
-    <Reference Include="Unity.Burst.Cecil.Rocks">
-      <HintPath>Library\PackageCache\com.unity.burst@1.6.4\Unity.Burst.CodeGen\Unity.Burst.Cecil.Rocks.dll</HintPath>
-    </Reference>
-    <Reference Include="Unity.VisualScripting.Antlr3.Runtime">
-      <HintPath>Library\PackageCache\com.unity.visualscripting@1.7.6\Runtime\VisualScripting.Flow\Dependencies\NCalc\Unity.VisualScripting.Antlr3.Runtime.dll</HintPath>
-    </Reference>
-    <Reference Include="Newtonsoft.Json">
-      <HintPath>Library\PackageCache\com.unity.nuget.newtonsoft-json@2.0.0\Runtime\Newtonsoft.Json.dll</HintPath>
-    </Reference>
-    <Reference Include="Sirenix.OdinInspector.Editor">
-      <HintPath>Assets\Plugins\Sirenix\Assemblies\Sirenix.OdinInspector.Editor.dll</HintPath>
-    </Reference>
-    <Reference Include="Sirenix.OdinInspector.Attributes">
-      <HintPath>Assets\Plugins\Sirenix\Assemblies\Sirenix.OdinInspector.Attributes.dll</HintPath>
-    </Reference>
-    <Reference Include="Sirenix.Serialization.Config">
-      <HintPath>Assets\Plugins\Sirenix\Assemblies\Sirenix.Serialization.Config.dll</HintPath>
-    </Reference>
-    <Reference Include="Sirenix.Utilities">
-      <HintPath>Assets\Plugins\Sirenix\Assemblies\Sirenix.Utilities.dll</HintPath>
-    </Reference>
-    <Reference Include="Sirenix.Serialization">
-      <HintPath>Assets\Plugins\Sirenix\Assemblies\Sirenix.Serialization.dll</HintPath>
-    </Reference>
     <Reference Include="Sirenix.Utilities.Editor">
       <HintPath>Assets\Plugins\Sirenix\Assemblies\Sirenix.Utilities.Editor.dll</HintPath>
     </Reference>
     <Reference Include="NPOI.OOXML">
       <HintPath>Assets\Plugins\NoxLibrary\NPOI.OOXML.dll</HintPath>
     </Reference>
+    <Reference Include="Sirenix.OdinInspector.Editor">
+      <HintPath>Assets\Plugins\Sirenix\Assemblies\Sirenix.OdinInspector.Editor.dll</HintPath>
+    </Reference>
+    <Reference Include="Unity.Burst.Unsafe">
+      <HintPath>Library\PackageCache\com.unity.burst@1.6.4\Unity.Burst.Unsafe.dll</HintPath>
+    </Reference>
+    <Reference Include="Unity.Burst.Cecil.Mdb">
+      <HintPath>Library\PackageCache\com.unity.burst@1.6.4\Unity.Burst.CodeGen\Unity.Burst.Cecil.Mdb.dll</HintPath>
+    </Reference>
+    <Reference Include="Sirenix.OdinInspector.Attributes">
+      <HintPath>Assets\Plugins\Sirenix\Assemblies\Sirenix.OdinInspector.Attributes.dll</HintPath>
+    </Reference>
     <Reference Include="NPOI.OpenXml4Net">
       <HintPath>Assets\Plugins\NoxLibrary\NPOI.OpenXml4Net.dll</HintPath>
+    </Reference>
+    <Reference Include="Unity.Burst.Cecil.Pdb">
+      <HintPath>Library\PackageCache\com.unity.burst@1.6.4\Unity.Burst.CodeGen\Unity.Burst.Cecil.Pdb.dll</HintPath>
     </Reference>
     <Reference Include="NPOI">
       <HintPath>Assets\Plugins\NoxLibrary\NPOI.dll</HintPath>
@@ -433,8 +415,29 @@
     <Reference Include="ICSharpCode.SharpZipLib">
       <HintPath>Assets\Plugins\NoxLibrary\ICSharpCode.SharpZipLib.dll</HintPath>
     </Reference>
+    <Reference Include="Sirenix.Serialization.Config">
+      <HintPath>Assets\Plugins\Sirenix\Assemblies\Sirenix.Serialization.Config.dll</HintPath>
+    </Reference>
+    <Reference Include="Unity.Burst.Cecil">
+      <HintPath>Library\PackageCache\com.unity.burst@1.6.4\Unity.Burst.CodeGen\Unity.Burst.Cecil.dll</HintPath>
+    </Reference>
+    <Reference Include="Sirenix.Utilities">
+      <HintPath>Assets\Plugins\Sirenix\Assemblies\Sirenix.Utilities.dll</HintPath>
+    </Reference>
+    <Reference Include="Unity.Burst.Cecil.Rocks">
+      <HintPath>Library\PackageCache\com.unity.burst@1.6.4\Unity.Burst.CodeGen\Unity.Burst.Cecil.Rocks.dll</HintPath>
+    </Reference>
+    <Reference Include="Unity.VisualScripting.Antlr3.Runtime">
+      <HintPath>Library\PackageCache\com.unity.visualscripting@1.7.6\Runtime\VisualScripting.Flow\Dependencies\NCalc\Unity.VisualScripting.Antlr3.Runtime.dll</HintPath>
+    </Reference>
     <Reference Include="NoxLibrary">
       <HintPath>Assets\Plugins\NoxLibrary\NoxLibrary.dll</HintPath>
+    </Reference>
+    <Reference Include="Newtonsoft.Json">
+      <HintPath>Library\PackageCache\com.unity.nuget.newtonsoft-json@2.0.0\Runtime\Newtonsoft.Json.dll</HintPath>
+    </Reference>
+    <Reference Include="Sirenix.Serialization">
+      <HintPath>Assets\Plugins\Sirenix\Assemblies\Sirenix.Serialization.dll</HintPath>
     </Reference>
     <Reference Include="MoreLinq">
       <HintPath>Assets\Plugins\NoxLibrary\MoreLinq.dll</HintPath>

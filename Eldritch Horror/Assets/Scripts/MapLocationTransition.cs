@@ -9,11 +9,6 @@ public class MapLocationTransition : MonoBehaviour
     [SerializeField] private MapLocation _mapB;
     [SerializeField, OnValueChanged("UpdateColors")] private MapTransitionType _transitionType;
     [SerializeField] public LineRenderer lr;
-    [Button]
-    private void Start()
-    {
-        lr = GetComponent<LineRenderer>();
-    }
     public void UpdateObjectName()
     {
         name = $"Transition - {_mapA.locationName} - {_mapB.locationName}";
@@ -37,10 +32,11 @@ public class MapLocationTransition : MonoBehaviour
         UpdateColors();
     }
     [Button]
-    void UpdateColors()
+    private void UpdateColors()
     {
         lr.endColor = lr.startColor = transitionColors[(int)_transitionType];
     }
+    public void Highlight(bool active) => gameObject.SetActive(active);
 }
 
 public enum MapTransitionType

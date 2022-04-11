@@ -13,6 +13,14 @@ public class MapLocation : MonoBehaviour
     {
         return _transitions.FirstOrDefault(x => x.LeadsToLocation(location));
     }
+
+    [Button]
+    public void SetHighlight(bool active) => GetComponent<SpriteRenderer>().enabled = active;
+
+    public void HighlightPathToLocation(MapLocation location)
+    {
+
+    }
     #region System
     [Button]
     private void UpdateObjectName()
@@ -22,12 +30,11 @@ public class MapLocation : MonoBehaviour
     [Button]
     private void UpdateLinkedTransitions()
     {
-        foreach(MapLocation location in _linkedLocations)
+        foreach (MapLocation location in _linkedLocations)
         {
             location.GetTransitionTo(this).SyncTransitions(GetTransitionTo(location));
         }
     }
-
     [Button]
     private void GenerateTransitions(GameObject transitionPrefab)
     {
@@ -48,7 +55,6 @@ public class MapLocation : MonoBehaviour
             _transitions.Add(transitionScript);
         }
     }
-
     private void LinkBothWays()
     {
         foreach (MapLocation location in _linkedLocations)
